@@ -4,10 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class BufferedReadWriteVersion {
@@ -37,7 +34,7 @@ public class BufferedReadWriteVersion {
 
             System.out.println("Play Again? y for yes -or- n or just enter for no");
 
-        } while (input.nextLine().equalsIgnoreCase("y"));
+        } while (input.nextLine().toLowerCase().startsWith("y"));
 
         System.out.println("YOUR SCORE IS " + score);
     }
